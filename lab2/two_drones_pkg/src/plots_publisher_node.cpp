@@ -74,6 +74,7 @@ class PlotsPublisherNode : public rclcpp::Node {
          */
 
         // TODO: fill in here
+        transform = parent->tf_buffer_->lookupTransform(ref_frame, dest_frame, tf2::TimePointZero);
 
         // ~~~~~~~~~~~~~~~~~~~~~~~~  END OF EDIT SECTION ~~~~~~~~~~~~~~~~~~~~~~~~~
         while (poses.size() >= buffer_size) poses.pop_front();

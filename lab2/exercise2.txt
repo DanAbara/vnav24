@@ -1,0 +1,8 @@
+1. ros2 node list
+ ros2 run rqt_graph rqt_graph
+  
+3. av1broadcaster, av2broadcaster, 
+ /visuals 
+
+4. If we omit static:=True, the av1broadcaster and av2broadcaster nodes do not run since the node has an 'if' condition to run only if static is True.
+The 'unless' condition means the frames_publisher_node will run unless the static variable is True.
