@@ -1,4 +1,4 @@
-Part A
+iPart A
 1. tf2::fromMsg(quat_msg, quat_tf);
 
 2.geometry_msgs::msg::Quaternion quat_msg = tf2::toMsg(quat_tf);
@@ -7,8 +7,8 @@ Part A
    q.w();
 
 Part B
-4. quat_t.z();
+1. quat_t.z();
 
-5. Eigen::Quaterniond q; // define quaternion
+2. Eigen::Quaterniond q; // define quaternion
    tf2::fromMsg(quat_msg, q); // convert quaternion message to Eigen-specific Quaterniond type
    q.matrix(); // convert to 3x3 Eigen rotation matrix
